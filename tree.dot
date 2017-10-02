@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="go_out <= 1.5\ngini = 0.3327\nsamples = 223\nvalue = [176, 47]"] ;
+1 [label="date <= 4.5\ngini = 0.4647\nsamples = 79\nvalue = [50, 29]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="date <= 1.5\ngini = 0.4983\nsamples = 51\nvalue = [27, 24]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4922\nsamples = 48\nvalue = [27, 21]"] ;
+2 -> 4 ;
+5 [label="goal <= 5.5\ngini = 0.2934\nsamples = 28\nvalue = [23, 5]"] ;
+1 -> 5 ;
+6 [label="gini = 0.2041\nsamples = 26\nvalue = [23, 3]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]"] ;
+5 -> 7 ;
+8 [label="go_out <= 2.5\ngini = 0.2188\nsamples = 144\nvalue = [126, 18]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="intel3_1 <= 6.5\ngini = 0.3107\nsamples = 78\nvalue = [63, 15]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]"] ;
+9 -> 10 ;
+11 [label="gini = 0.2836\nsamples = 76\nvalue = [63, 13]"] ;
+9 -> 11 ;
+12 [label="exphappy <= 9.5\ngini = 0.0868\nsamples = 66\nvalue = [63, 3]"] ;
+8 -> 12 ;
+13 [label="gini = 0.0615\nsamples = 63\nvalue = [61, 2]"] ;
+12 -> 13 ;
+14 [label="gini = 0.4444\nsamples = 3\nvalue = [2, 1]"] ;
+12 -> 14 ;
+}
